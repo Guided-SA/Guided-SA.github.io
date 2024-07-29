@@ -104,8 +104,8 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3 has-text-centered" style="border-bottom: 2px solid">TL;DR &#128640</h2>
         <p>
-          We present GLASS, a slot attention methods that uses language guidance in order to obtain better slot embeddings.
-          GLASS sets new state-of-the-art (SOTA) benchmark for the object discovery and conditional generation tasks compared to exisiting slot attention-based methods.
+          We present GLASS, a slot attention method that uses language guidance in order to obtain slot embeddings which are better suited for various downstream tasks such as object-level property prediction, conditional generation and object discovery.
+          GLASS sets state-of-the-art (SOTA) benchmark for the object discovery and conditional generation tasks compared to exisiting slot attention-based methods.
         </p>
         <div class="content has-text-justified">
   </div>
@@ -190,7 +190,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3" style="border-bottom: 2px solid">Results</h2>
         <div class="content has-text-justified">
-        <p> GLASS and GLASS<sup>&dagger;</sup> are representation learning methods that perform multiple downstream tasks like object discovery (OD), property prediction (PP), and conditional generation (CG). 
+        <p> GLASS and GLASS<sup>&dagger;</sup> (GLASS with ground-truth class labels) are representation learning methods that perform multiple downstream tasks like object discovery (OD), property prediction (PP), and conditional generation (CG). 
           We show results for all the tasks.
         </p>
 
@@ -205,8 +205,8 @@
         <div class="content has-text-justified">
           <p>
             We compare our method against language-based segmentation models (top partition), weakly-supervised models (middle
-            partition), and OCL models (bottom partition) for the object discovery task. Downstream Tasks
-            denote a model’s capability for solving the following tasks: <b>OD:</b> object discovery, <b>PP:</b> object-level
+            partition), and OCL models (bottom partition) for the object discovery task. “Downstream Tasks”
+            denotes a model’s capability for solving the following tasks: <b>OD:</b> object discovery, <b>PP:</b> object-level
             property prediction, and <b>CG:</b> conditional generation. Input denotes the input signal the model trains
             on, where <b>I:</b> image, <b>C:</b> captions, and <b>L:</b> image-level labels. The best value is highlighted in red,
             the second best in blue. We show the relative improvement (in parentheses) of GLASS compared to
@@ -231,7 +231,7 @@
     </div>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">OD with other weakly-supervised OCL methods</h2>
+        <h2 class="title is-3">Quantative Comparision with other Weakly-Supervised OCL Methods</h2>
         <div class="content has-text-justified">
           <p>
             GLASS outperforms other weakly-supervised variants of StableLSD such as <b>StableLSD-BBox:</b> StableLSD, which uses bounding box information for initalizing slots and <b>StableLSD Dynamic:</b> StableLSD with dynamic number of slots equal to number of objects present in the scene. 
@@ -258,7 +258,7 @@
     </div>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Object-level propery prediction</h2>
+        <h2 class="title is-3">Object-level Propery Prediction</h2>
 
         <div class="content has-text-justified">
           <p>
